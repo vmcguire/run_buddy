@@ -12,14 +12,17 @@ header {
     background-color: #39a6b2;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;  
 }
 header h1{
     font weight: bold;
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    /* display: inline; */
+    /*add alongside your existing declarations*/
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 
 }
 header a{
@@ -33,7 +36,6 @@ header nav{
 /* header nav ul li{
     display: inline;
 } */
-
 header nav ul{
     display: flex;
     flex-wrap: wrap;
@@ -45,6 +47,7 @@ header nav ul li a{
     margin: 10px 15px;
     font-weight: lighter;
     font-size: 1.5vw;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 footer {
     background: #fce138;
@@ -71,7 +74,6 @@ footer a{
 section {
     padding: 60px;
 }
-
 /* Hero Style Start*/
 .hero {
     background-image: url("../images/hero-bg.jpg");
@@ -86,7 +88,8 @@ section {
 }
 .hero-form{
     color: #024e76;
-    background-color: #fce138;
+    background-color: rgba(252,225,56,0.8);
+    border-radius: 15px;
     padding: 20px;
     /* width: 500px; */
     border-style: solid;
@@ -114,6 +117,7 @@ section {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 .hero-form label {
     margin: 0 5px;
@@ -124,6 +128,7 @@ section {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 10px;
 }
 .hero-cta {
     width: 35%;
@@ -137,7 +142,7 @@ section {
     color: #fce138;
     font-size: 55px;
     font-style: italic;
-
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 /* .hero-cta p{
     color: white;
@@ -146,12 +151,10 @@ section {
     
 } */
 /* HERO STYLES END*/
-
 /*What we do styling*/
 /* .intro{
     text-align: center;
 } */
-
 .intro h2{
  }
 .intro p{
@@ -257,8 +260,6 @@ section {
 }
 .trainer-bio {
     padding: 25px;
-    /* float: left;
-    width: 65%; */
     line-height: 1.3;
 }
 .text-left {
@@ -287,8 +288,6 @@ section {
     font-size: 17px;
 }
 /*REACH OUT STYLES START*/
-
-
 .contact{
     /* text-align: center; */
     background: #024e76;
@@ -310,7 +309,6 @@ section {
     /* width: 400px; */
     height: 400px;
 }
-
 .contact-info div { */
     /* width: 410px;
     display: inline-block;
@@ -319,26 +317,21 @@ section {
     margin: 30px 0 0 60px; */
     color: white;
 }
-
 .contact-info h3{
     color: #fce138;
     font-size: 32px;
 }
-
 .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
     font-size: 16px;
     font-style: normal;
 }
-
 .contact-info a{
     color: #fce138;
 }
 /*REACH OUT STYLES END*/
-
 /*Added Styles Week 2*/
-
 .flex-row{
     display: flex;
 }
@@ -351,6 +344,7 @@ section {
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 10px;
 }
 .contact-form button{
     width: 100%;
@@ -360,6 +354,7 @@ section {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 10px;
 }
 /* SERVICE STYLES BEGIN*/
 .services {
@@ -405,12 +400,14 @@ section {
     font-size: 1.5rem;
     font-weight: bold;
 }
-
 /* .grid-container {
     justify-items: start | end | center | stretch;
     align-items: start | end | center | stretch;
     place-items: <align-items> <justify-items>;
 } */
+
+
+
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER*/
@@ -460,7 +457,6 @@ section {
        flex: 1 100%;
    }
 }
-
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px){
     section {
